@@ -4,8 +4,8 @@ import os
 
 from streamlit_option_menu import option_menu
 
-model_path_clf = os.path.join(r'D:\Matakuliah Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam\UTS\Projek UTS PMDPM_Kelas_NamaSB\BestModel_CLF_RandomForest_Numpy.pkl')
-model_path_reg = os.path.join(r'D:\Matakuliah Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam\UTS\Projek UTS PMDPM_Kelas_NamaSB\BestModel_REG_LassoRegression_Numpy.pkl')
+model_path_clf = 'BestModel_CLF_RandomForest_Numpy.pkl'
+model_path_reg = 'BestModel_CLF_LassoRegression_Numpy.pkl'
 
 with open(model_path_clf, 'rb') as f:
     loaded_model_clf = pickle.load(f)
